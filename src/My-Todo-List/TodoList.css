@@ -1,0 +1,125 @@
+/* Global styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 10px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  /* Main container */
+  
+  /* Input field */
+  input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #764ba2;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  input:focus {
+    border-color: #667eea;
+    box-shadow: 0px 0px 8px rgba(102, 126, 234, 0.5);
+  }
+  
+  /* Add Button */
+  .addBtn {
+    background: #4ba25b;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  button {
+    background: #764ba2;
+    color: white;
+    padding: 10px 15px;
+    margin-left: 100px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background: #667eea;
+  }
+  
+  /* Todo List */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    position: relative;
+    animation: slideIn 0.4s ease-out;
+  }
+  
+  /* Line-through effect for completed tasks */
+  li.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+  
+  /* Delete button */
+  /* button.delete {
+    background: #ff6b6b;
+    transition: 0.3s;
+  } */
+  
+  button.delete:hover {
+    background: #ff4757;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
